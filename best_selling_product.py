@@ -5,8 +5,9 @@ maxSales = 0
 bestProduct = ""
 
 for i in range(len(products)):
-    if sales[i] > maxSales:
+    if sales[i] >= maxSales:
         maxSales = sales[i]
         bestProduct = products[i]
 
 print("Best-selling product:", bestProduct)
+
